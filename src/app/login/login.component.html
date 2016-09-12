@@ -1,0 +1,19 @@
+<h3> Please enter your credentials:</h3>
+<div>
+    <label>Email : </label>
+    <input [(ngModel)]="credentials.email" placeholder="Enter your email">
+</div>
+<div>
+    <label>Password : </label>
+    <input [(ngModel)]="credentials.password" placeholder="Enter your password">
+</div>
+<br>
+<div>
+    <!--<button value="Login"></button>-->
+    <!--<button><a routerLink="/home"> Login </a></button>-->
+    <button> Login </button>
+</div>
+<p>You have typed the email: {{credentials.email}}</p>
+<p>You have typed the password: {{credentials.password}}</p>
+
+<router-outlet></router-outlet>
