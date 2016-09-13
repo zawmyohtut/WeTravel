@@ -5,10 +5,13 @@ import { FormsModule }   from '@angular/forms';
 import { AppComponent }   from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { LocationDetailComponent } from './location-detail/location-detail.component';
+import { routing } from './app.routing';
+
 
 @NgModule({
-    imports: [ BrowserModule, FormsModule ],
-    declarations: [ AppComponent, LoginComponent, HomeComponent ],
+    imports: [ BrowserModule, FormsModule, routing ],
+    declarations: [ AppComponent, LoginComponent, HomeComponent, LocationDetailComponent ],
     bootstrap: [ AppComponent ]
 })
 
